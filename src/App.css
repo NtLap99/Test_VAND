@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+  font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  margin-top: 10rem;
+  border-radius: 1rem;
+  background: rgb(180, 180, 180); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 120, 120); 
+}
+
+.container {
+  margin: 3rem auto !important;
+  max-width: 1440px;
+}
+
+.custom-select{
+  width: 10%!important;
+  margin-bottom: 1rem;
+}
+
+.notify.success {
+  color: #027A48 !important;
+  border: 1px solid #027A48 !important;
+  background: #ECFDF3 !important;
+}
+
+.notify.error {
+  color: #D92C20 !important;
+  border: 1px solid #D92C20 !important;
+  background: #FEF3F2 !important;
+}
+
+.notify .notify__title {
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.notify .notify__body {
+  padding-left: 1rem;
+  font-size: small;
+}
+
+.notify .notify__icon {
+  left: 0.2rem;
+  top: -0.2rem;
+}
+
+.pagination {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.pagination .pagination__page--item {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 0.8rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination .pagination__page--item.active {
+  background: rgb(108, 108, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination .pagination__page--item.active a {
+  color: white !important;
 }
