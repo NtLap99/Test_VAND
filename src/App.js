@@ -165,28 +165,28 @@ function App() {
             <TableRow sx={{ background: '#f5f5f5' }}>
               <TableCell align="center" sx={{ width: '3%' }}>#</TableCell>
               <TableCell align="center" sx={{ width: '10%' }}>Country</TableCell>
-              <TableCell align="center" sx={{ width: '8%' }}>CountryCode</TableCell>
+              <TableCell align="center" sx={{ width: '8%' }}>Code</TableCell>
               <TableCell align="center" sx={{ width: '9%' }}>Slug</TableCell>
-              <TableCell align="center" sx={{ width: '10%' }}>NewConfirmed</TableCell>
+              <TableCell align="center" sx={{ width: '10%' }}>New Confirmed</TableCell>
               <TableCell
                 align="center"
                 sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                 onClick={() => handleOnConfirmed()} >
-                <BiSortAlt2 />TotalConfirmed
+                <BiSortAlt2 />Total Confirmed
               </TableCell>
-              <TableCell align="center" sx={{ width: '8%' }}>NewDeaths</TableCell>
+              <TableCell align="center" sx={{ width: '8%' }}>New Deaths</TableCell>
               <TableCell
                 align="center"
                 sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                 onClick={() => handleOnDeaths()} >
-                <BiSortAlt2 />TotalDeaths
+                <BiSortAlt2 />Total Deaths
               </TableCell>
-              <TableCell align="center" sx={{ width: '10%' }}>NewRecovered</TableCell>
+              <TableCell align="center" sx={{ width: '10%' }}>New Recovered</TableCell>
               <TableCell
                 align="center"
                 sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                 onClick={() => handleOnRecovered()} >
-                <BiSortAlt2 />TotalRecovered
+                <BiSortAlt2 />Total Recovered
               </TableCell>
               <TableCell align="center" sx={{ width: '8%' }}>Date</TableCell>
             </TableRow>
