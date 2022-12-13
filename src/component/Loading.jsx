@@ -7,7 +7,7 @@ function Loading() {
 
   return (
     <TableRow>
-      <TableCell colSpan={11} sx={{ height: '500px', textAlign: 'center' }}>
+      <TableCell colSpan={11} sx={{ height: '530px', textAlign: 'center' }}>
         <Oval
           height={80}
           color="#4fa94d"

@@ -165,28 +165,28 @@ function App() {
             <TableRow sx={{ background: '#f5f5f5' }}>
               <TableCell align="center" sx={{ width: '3%' }}>#</TableCell>
               <TableCell align="center" sx={{ width: '10%' }}>Country</TableCell>
-              <TableCell align="center" sx={{ width: '8%' }}>Code</TableCell>
+              <TableCell align="center" sx={{ width: '7%' }}>Code</TableCell>
               <TableCell align="center" sx={{ width: '9%' }}>Slug</TableCell>
               <TableCell align="center" sx={{ width: '10%' }}>New Confirmed</TableCell>
               <TableCell
                 align="center"
-                sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+                sx={{ width: '11%' }}
                 onClick={() => handleOnConfirmed()} >
-                <BiSortAlt2 />Total Confirmed
+                <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}><BiSortAlt2 />Total Confirmed</Box>
               </TableCell>
               <TableCell align="center" sx={{ width: '8%' }}>New Deaths</TableCell>
               <TableCell
                 align="center"
-                sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+                sx={{ width: '10%' }}
                 onClick={() => handleOnDeaths()} >
-                <BiSortAlt2 />Total Deaths
+                <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}><BiSortAlt2 />Total Deaths</Box>
               </TableCell>
-              <TableCell align="center" sx={{ width: '10%' }}>New Recovered</TableCell>
+              <TableCell align="center" sx={{ width: '11%' }}>New Recovered</TableCell>
               <TableCell
                 align="center"
-                sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
-                onClick={() => handleOnRecovered()} >
-                <BiSortAlt2 />Total Recovered
+                sx={{ width: '12%' }}
+                onClick={() => handleOnRecovered()}>
+                <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}><BiSortAlt2 />Total Recovered</Box>
               </TableCell>
               <TableCell align="center" sx={{ width: '8%' }}>Date</TableCell>
             </TableRow>
@@ -221,7 +221,7 @@ function App() {
                             }}>{row.Country}</Box>
                           </Tooltip>
                         </TableCell>
-                        <TableCell align="center" sx={{ width: '8%' }}>{row.CountryCode}</TableCell>
+                        <TableCell align="center" sx={{ width: '7%' }}>{row.CountryCode}</TableCell>
                         <TableCell align="center" sx={{ width: '9%' }}>
                           <Tooltip title={row.Country} placement="bottom">
                             <Box sx={{
@@ -233,11 +233,11 @@ function App() {
                           </Tooltip>
                         </TableCell>
                         <TableCell align="center" sx={{ width: '10%' }} >{row.NewConfirmed}</TableCell>
-                        <TableCell align="center" >{row.TotalConfirmed}</TableCell>
+                        <TableCell align="center" sx={{ width: '11%' }}>{row.TotalConfirmed}</TableCell>
                         <TableCell align="center" sx={{ width: '8%' }}>{row.NewDeaths}</TableCell>
-                        <TableCell align="center" >{row.TotalDeaths}</TableCell>
-                        <TableCell align="center" sx={{ width: '10%' }}>{row.NewRecovered}</TableCell>
-                        <TableCell align="center" >{row.TotalRecovered}</TableCell>
+                        <TableCell align="center" sx={{ width: '10%' }}>{row.TotalDeaths}</TableCell>
+                        <TableCell align="center" sx={{ width: '11%' }}>{row.NewRecovered}</TableCell>
+                        <TableCell align="center" sx={{ width: '12%' }}>{row.TotalRecovered}</TableCell>
                         <TableCell align="center" sx={{ width: '8%' }}>{moment(row.Date).format("DD/MM/YYYY")}</TableCell>
                       </TableRow>
                     ))
